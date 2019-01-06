@@ -7,7 +7,9 @@ class Scraper
     html = open("./fixtures/student-site/index.html")
     doc = Nokogiri::HTML(html)
     binding.pry
-    #for the student name = doc.css(".student-name").text 
+    #for the student name = doc.css(".student-name").text
+    #location = doc.css(".student-location").text
+    #website = student.css("a").attribute("href").value
   end
 
   def self.scrape_profile_page(profile_url)
