@@ -14,7 +14,7 @@ class Scraper
       }
     end
   end
-
+end
     #for the student name = doc.css(".student-name").text
     #location = doc.css(".student-location").text
     #website = student.css("a").attribute("href").value
