@@ -12,6 +12,8 @@ class Scraper
         location: students.css(".student-location").text
         profile_url: students.css(".student-location").text
       }
+    end
+  end
     #for the student name = doc.css(".student-name").text
     #location = doc.css(".student-location").text
     #website = student.css("a").attribute("href").value
