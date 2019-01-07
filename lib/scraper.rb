@@ -17,7 +17,7 @@ class Scraper
         location: students.css(".student-location").text
         profile_url: students.css(".student-location").text
       }
-
+    end
 
   end
 
