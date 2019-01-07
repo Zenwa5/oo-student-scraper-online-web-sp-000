@@ -46,8 +46,4 @@ class Scraper
     student[:bio] = profile.css(".description-holder p").text
     student
   end
-end 
-
-  end
-
 end
