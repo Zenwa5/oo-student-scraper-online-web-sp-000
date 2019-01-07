@@ -9,7 +9,6 @@ class Scraper
     #location = doc.css(".student-location").text
     #website = student.css("a").attribute("href").value
 
-    
     html = open("./fixtures/student-site/index.html")
     doc = Nokogiri::HTML(html)
     doc.css(".student-card").map do |students|
@@ -18,7 +17,7 @@ class Scraper
         location: students.css(".student-location").text
         profile_url: students.css(".student-location").text
       }
-    
+
 
   end
 
