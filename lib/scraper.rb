@@ -13,9 +13,9 @@ class Scraper
     doc = Nokogiri::HTML(html)
     doc.css(".student-card").map do |students|
       {
-        name: students.css(".student-name").text
-        location: students.css(".student-location").text
-        profile_url: students.css(".student-location").text
+        name: students.css("h4.student-name").text
+        location: students.css("p.student-location").text
+        profile_url: students.css("a").attribute("href").value
       }
     end
   end
