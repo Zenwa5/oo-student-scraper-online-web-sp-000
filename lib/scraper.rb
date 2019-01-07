@@ -22,6 +22,9 @@ class Scraper
 
 
   def self.scrape_profile_page(profile_url)
+    html = File.read(profile_url)
+    profile = Nokogiri::HTML(html)
+    student = {}
 
   end
 
